@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1c23f89a0d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <title>Interaktivni film</title>
+</head>
+
+<body>
+    <div id="body-div">
+        <div id="navbar">
+            <div class="nav-left">
+                <img id="logo" src="src/favicon.png">
+            </div>
+            <div class="nav-right">
+                <p id="instruction">Instrukcije</p>
+                <p id="videonav">Film</p>
+                <p id="team">Tim</p>
+            </div>
+        </div>
+        <div id="welcome">
+            <div id="message">
+                <h1>Prvi studentski</h1>
+                <h1>Interaktivni film</h1>
+                <p>Ili mi bar tako mislimo. </p>
+            </div>
+            <div id="pictures">
+                <img id="control-picture" src="src/cursor.png">
+                <img id="trailer-picture" src="src/trailer-picture.jpg">
+            </div>
+            <div id="bottom-icon">
+                <i class="fas fa-chevron-down fa-lg" id="down"></i>
+            </div>
+        </div>
+        <div class="display-control" id="description">
+            <p>
+                <h1>Instrukcije</h1>
+            </p>
+            <p>Noć je pred ispit. Svaki student ima svoje rituale i načine spremanja. Vi birate svoju ulogu i kako ćete se ponašati.</p>
+            <i class="fas fa-chevron-down fa-lg" id="down"></i>
+        </div>
+        <div class="display-control" id="video-div">
+            <video id="video-tag" controls>
+            <source src="src/0.mp4" type="video/mp4">
+            </video>
+            <div id="modal">
+                <h2 id="modalHeading"></h2>
+                <div class="option">
+                    <p id="option1"></p>
+                </div>
+                <div class="option">
+                    <p id="option2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="display-control">
+            <h1>Brought to you by:</h1>
+            <div id="team">
+                <img src="src/daca.jpg" id="t1">
+                <img src="src/maja.jpeg" id="t3">
+                <img src="src/ogi.jpeg" id="t2">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</html>
