@@ -133,6 +133,7 @@ for (let j = 0; j < options.length; j++) {
             video.src = src + `${klip}` + "." + `${j}.mp4`;
         }
 
+        video.src = "?raw=true"
         closeModal();
         video.currentTime = 0;
         video.play();
