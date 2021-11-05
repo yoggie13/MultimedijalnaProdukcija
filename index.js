@@ -43,18 +43,18 @@ video.ontimeupdate = (event) => {
 
     if (video.currentTime > (video.duration - 3)) {
         if (video.src.includes("src/4.0.mp4")) {
-            video.src = src + "7.1.mp4";
+            video.src = src + "7.1.mp4" + "?raw=true";
             klip = 7;
             video.currentTime = 0;
             video.play();
 
         } else if (video.src.includes("src/6.0.mp4")) {
-            video.src = src + "7.0.mp4";
+            video.src = src + "7.0.mp4" + "?raw=true";
             klip++;
             video.currentTime = 0;
             video.play();
         } else if (video.src.includes("8.0.mp4")) {
-            video.src = src + "9.0.mp4";
+            video.src = src + "9.0.mp4" + "?raw=true";
             video.currentTime = 0;
             video.play();
         } else if (video.src.includes("8.1.mp4")) {
@@ -105,35 +105,35 @@ var opcijeDva = [
 for (let j = 0; j < options.length; j++) {
     options[j].addEventListener("click", function() {
 
+
         klip++;
 
         if ((klip == 2 || klip == 3) && j == 1) {
-            video.src = src + "7.1.mp4";
+            video.src = src + "7.1.mp4" + "?raw=true";
             klip = 7;
         } else if (video.src.includes("7.1.mp4")) {
             src += "nijepio/";
             klip = 8;
-            video.src = src + `8.${j}.mp4`;
+            video.src = src + `8.${j}.mp4` + "?raw=true";
 
         } else if (video.src.includes("7.0.mp4")) {
             src += "pio/";
             klip = 8;
-            video.src = src + `8.${j}.mp4`;
+            video.src = src + `8.${j}.mp4` + "?raw=true";
 
         } else if (video.src.includes("9.0.mp4") || video.src.includes("8.1.mp4")) {
             if (j == 0) {
                 src = "src/";
-                video.src = src + "0.mp4";
+                video.src = src + "0.mp4" + "?raw=true";
                 klip = 0;
             } else
                 move(3);
         } else {
             if (klip == 5 || klip == 6)
                 j = 0;
-            video.src = src + `${klip}` + "." + `${j}.mp4`;
+            video.src = src + `${klip}` + "." + `${j}.mp4` + "?raw=true";
         }
 
-        video.src = "?raw=true"
         closeModal();
         video.currentTime = 0;
         video.play();
