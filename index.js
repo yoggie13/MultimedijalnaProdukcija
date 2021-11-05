@@ -1,6 +1,6 @@
 var icons = document.getElementsByClassName("fas fa-chevron-down");
 var displayControl = document.getElementsByClassName("display-control");
-var src = "src/";
+var src = "https://github.com/yoggie13/MultimedijalnaProdukcija/blob/master/src/";
 
 function move(number) {
     window.scrollTo({
